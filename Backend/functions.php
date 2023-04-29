@@ -18,10 +18,7 @@ $renting_start = isset($_POST['renting-start']) ? strtotime($_POST['renting-star
 $renting_end = isset($_POST['renting-end']) ? strtotime($_POST['renting-end']) : strtotime('+1 year');
 $renting_rating = $_POST['renting-rating'] ?? 3;
 
-if (empty($owner_first_name) || empty($owner_last_name)) {
-    echo "Owner first name and last name are required.";
-    exit;
-}
+
 
 $owner_first_name = mysqli_real_escape_string($conn, $owner_first_name);
 $owner_last_name = mysqli_real_escape_string($conn, $owner_last_name);
