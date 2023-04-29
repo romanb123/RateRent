@@ -25,7 +25,7 @@ var RateRent = {
 
         $.ajax({
             type: 'POST',
-            url: 'http://localhost/RateRent/Backend/functions.php',
+            url: window.location.href + 'Backend/functions.php',
             data: data,
             success: function (response) {
                 console.log('AJAX request was successful.');
