@@ -1,7 +1,7 @@
 <?php
 
 $servername = "localhost";
-$username = "";
+$username = "root";
 $password = "";
 $dbname = "rent_info";
 
