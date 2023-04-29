@@ -27,7 +27,7 @@ $renting_start = mysqli_real_escape_string($conn, $renting_start);
 $renting_end = mysqli_real_escape_string($conn, $renting_end);
 $renting_rating = mysqli_real_escape_string($conn, $renting_rating);
 
-$sql = "INSERT INTO rentals (owner_first_name, owner_last_name, apartment_address, renting_start, renting_end, renting_rating)
+$sql = "INSERT INTO rent_info (owner_first_name, owner_last_name, apartment_address, renting_start, renting_end, renting_rating)
 VALUES ('$owner_first_name', '$owner_last_name', '$apartment_address', '$renting_start', '$renting_end', '$renting_rating')";
 
 if ($conn->query($sql) === TRUE) {
